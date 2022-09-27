@@ -3,9 +3,46 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{88086D3B-F648-4A4C-AB2E-5A764FDDB5A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.API", "PaymentSolution.API\PaymentSolution.API.csproj", "{244C208D-F50C-4590-B8B5-99F01E278CDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.GerenciaNet", "PaymentSolution.GerenciaNet\PaymentSolution.GerenciaNet.csproj", "{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B216ED1C-50C6-402C-BE69-02C5A5448A65}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{225495BB-4EDB-4F07-A963-5CBE68E835E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.GerenciaNet.Test", "PaymentSolution.GerenciaNet.Test\PaymentSolution.GerenciaNet.Test.csproj", "{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{244C208D-F50C-4590-B8B5-99F01E278CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244C208D-F50C-4590-B8B5-99F01E278CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244C208D-F50C-4590-B8B5-99F01E278CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244C208D-F50C-4590-B8B5-99F01E278CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{244C208D-F50C-4590-B8B5-99F01E278CDE} = {88086D3B-F648-4A4C-AB2E-5A764FDDB5A2}
+		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD} = {225495BB-4EDB-4F07-A963-5CBE68E835E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {619AEC94-F0AE-4962-91C6-C687FB4316B1}

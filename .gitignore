@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/PaymentSolution.API/Certificates/GerenciaNetHomologacao.p12
+/PaymentSolution.API/appsettings.json
