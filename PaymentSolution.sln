@@ -20,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.GerenciaNet
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{A205DAA2-A469-4BBE-8374-6464631A33DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Shared", "PaymentSolution.Shared\PaymentSolution.Shared.csproj", "{D46F9636-B455-4D62-8A36-943241A63AFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Shared", "PaymentSolution.Shared\PaymentSolution.Shared.csproj", "{D46F9636-B455-4D62-8A36-943241A63AFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{290DEF28-D6B1-4D4C-ADF9-B8FA094F81B2}"
 EndProject
@@ -28,7 +28,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{97A6EA10-7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A2A84088-16CD-4658-8B62-AE288551F6CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Domain", "PaymentSolution.Domain\PaymentSolution.Domain.csproj", "{85DF732E-410C-4207-965A-CBD63ADA96FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Domain", "PaymentSolution.Domain\PaymentSolution.Domain.csproj", "{85DF732E-410C-4207-965A-CBD63ADA96FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Infrastructure", "PaymentSolution.Infrastructure\PaymentSolution.Infrastructure.csproj", "{5DBBADE1-F07B-41E1-A0A9-17DC25E87573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Infrastructure.IoC", "PaymentSolution.Infrastructure.IoC\PaymentSolution.Infrastructure.IoC.csproj", "{D944FA2A-9675-40A0-85AB-324342BED92B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Infrastructure.Interfaces", "PaymentSolution.Infrastructure.Interfaces\PaymentSolution.Infrastructure.Interfaces.csproj", "{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +62,18 @@ Global
 		{85DF732E-410C-4207-965A-CBD63ADA96FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85DF732E-410C-4207-965A-CBD63ADA96FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85DF732E-410C-4207-965A-CBD63ADA96FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBBADE1-F07B-41E1-A0A9-17DC25E87573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBBADE1-F07B-41E1-A0A9-17DC25E87573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBBADE1-F07B-41E1-A0A9-17DC25E87573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBBADE1-F07B-41E1-A0A9-17DC25E87573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D944FA2A-9675-40A0-85AB-324342BED92B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D944FA2A-9675-40A0-85AB-324342BED92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D944FA2A-9675-40A0-85AB-324342BED92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D944FA2A-9675-40A0-85AB-324342BED92B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +83,9 @@ Global
 		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD} = {225495BB-4EDB-4F07-A963-5CBE68E835E5}
 		{D46F9636-B455-4D62-8A36-943241A63AFE} = {A205DAA2-A469-4BBE-8374-6464631A33DE}
 		{85DF732E-410C-4207-965A-CBD63ADA96FA} = {290DEF28-D6B1-4D4C-ADF9-B8FA094F81B2}
+		{5DBBADE1-F07B-41E1-A0A9-17DC25E87573} = {A2A84088-16CD-4658-8B62-AE288551F6CD}
+		{D944FA2A-9675-40A0-85AB-324342BED92B} = {A2A84088-16CD-4658-8B62-AE288551F6CD}
+		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91} = {A2A84088-16CD-4658-8B62-AE288551F6CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {619AEC94-F0AE-4962-91C6-C687FB4316B1}
