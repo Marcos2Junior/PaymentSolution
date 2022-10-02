@@ -6,7 +6,7 @@ namespace PaymentSolution.Infrastructure.Repositories
 {
     public class UserAccessRepository : PaymentSolutionRepository<UserAccess>, IUserAccessRepository
     {
-        public UserAccessRepository(DbContext dbContext) : base(dbContext)
+        public UserAccessRepository(PaymentSolutionDataContext dbContext) : base(dbContext)
         {
         }
     }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PaymentSolution.Infrastructure;
 
@@ -10,9 +11,10 @@ using PaymentSolution.Infrastructure;
 namespace PaymentSolution.Infrastructure.Migrations
 {
     [DbContext(typeof(PaymentSolutionDataContext))]
-    partial class PaymentSolutionDataContextModelSnapshot : ModelSnapshot
+    [Migration("20221002142247_AddUserAccesses")]
+    partial class AddUserAccesses
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,9 +78,11 @@ namespace PaymentSolution.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ApiKey")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("ClientID")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Name")
@@ -90,15 +94,18 @@ namespace PaymentSolution.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Scope")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Secret")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<bool>("UseCertificate")
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("WebHook")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");

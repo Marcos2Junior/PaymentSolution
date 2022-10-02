@@ -19,4 +19,13 @@
     <ProjectReference Include="..\PaymentSolution.Infrastructure.Interfaces\PaymentSolution.Infrastructure.Interfaces.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Seeding\Data\PaymentService.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Seeding\Data\Users.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

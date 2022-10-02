@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /PaymentSolution.API/Certificates/GerenciaNetHomologacao.p12
 /PaymentSolution.API/appsettings.json
+/PaymentSolution.Infrastructure/Seeding/Data
