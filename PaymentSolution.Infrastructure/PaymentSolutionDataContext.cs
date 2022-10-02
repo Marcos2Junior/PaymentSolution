@@ -25,6 +25,7 @@ namespace PaymentSolution.Infrastructure
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<UserAccess> UserAccesses { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<PaymentInstallment> PaymentInstallments { get; set; }
         public DbSet<PaymentService> PaymentServices { get; set; }

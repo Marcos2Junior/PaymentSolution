@@ -32,7 +32,7 @@ namespace PaymentSolution.Application.Services
                     DateTime = DateTime.UtcNow,
                     UserAgent = _httpContextAccessor.HttpContext.Request.Headers["User-Agent"].ToString(),
                     Ip = _httpContextAccessor.HttpContext.Request.HttpContext.Connection.RemoteIpAddress.ToString(),
-                    RefreshToken = new Guid().ToString(),
+                    RefreshToken = Guid.NewGuid().ToString(),
                     UserID = userDto.Id
                 });
 

@@ -22,8 +22,4 @@
     <ProjectReference Include="..\PaymentSolution.Shared\PaymentSolution.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
