@@ -1,7 +1,11 @@
-﻿namespace PaymentSolution.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PaymentSolution.Domain.Entities
 {
     public class PaymentService : BaseEntity
     {
+        public PaymentServiceType PaymentServiceType { get; set; }
+        [Required, MaxLength(50)]
         public string Name { get; set; }
         public string ClientID { get; set; }
         public string Secret { get; set; }

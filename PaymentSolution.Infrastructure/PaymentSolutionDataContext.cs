@@ -21,6 +21,7 @@ namespace PaymentSolution.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new PaymentInstallmentConfiguration());
         }
 
         public DbSet<User> Users { get; set; }

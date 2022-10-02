@@ -12,11 +12,14 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.23.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PaymentSolution.Application.IoC\PaymentSolution.Application.IoC.csproj" />
     <ProjectReference Include="..\PaymentSolution.GerenciaNet\PaymentSolution.GerenciaNet.csproj" />
     <ProjectReference Include="..\PaymentSolution.Infrastructure.IoC\PaymentSolution.Infrastructure.IoC.csproj" />
+    <ProjectReference Include="..\PaymentSolution.Shared\PaymentSolution.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

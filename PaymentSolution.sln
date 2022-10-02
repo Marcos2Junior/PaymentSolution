@@ -30,11 +30,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Domain", "PaymentSolution.Domain\PaymentSolution.Domain.csproj", "{85DF732E-410C-4207-965A-CBD63ADA96FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Infrastructure", "PaymentSolution.Infrastructure\PaymentSolution.Infrastructure.csproj", "{5DBBADE1-F07B-41E1-A0A9-17DC25E87573}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Infrastructure", "PaymentSolution.Infrastructure\PaymentSolution.Infrastructure.csproj", "{5DBBADE1-F07B-41E1-A0A9-17DC25E87573}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Infrastructure.IoC", "PaymentSolution.Infrastructure.IoC\PaymentSolution.Infrastructure.IoC.csproj", "{D944FA2A-9675-40A0-85AB-324342BED92B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Infrastructure.IoC", "PaymentSolution.Infrastructure.IoC\PaymentSolution.Infrastructure.IoC.csproj", "{D944FA2A-9675-40A0-85AB-324342BED92B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Infrastructure.Interfaces", "PaymentSolution.Infrastructure.Interfaces\PaymentSolution.Infrastructure.Interfaces.csproj", "{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Infrastructure.Interfaces", "PaymentSolution.Infrastructure.Interfaces\PaymentSolution.Infrastructure.Interfaces.csproj", "{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Application", "PaymentSolution.Application\PaymentSolution.Application.csproj", "{080D511C-88C7-42EB-AB34-6B58C7BE212E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Application.Interfaces", "PaymentSolution.Application.Interfaces\PaymentSolution.Application.Interfaces.csproj", "{971B1CCC-574D-4843-A904-8E342BE7F5E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Application.IoC", "PaymentSolution.Application.IoC\PaymentSolution.Application.IoC.csproj", "{C1A159B0-6EB3-4742-A781-16FD39FC9C97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,6 +80,18 @@ Global
 		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080D511C-88C7-42EB-AB34-6B58C7BE212E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080D511C-88C7-42EB-AB34-6B58C7BE212E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080D511C-88C7-42EB-AB34-6B58C7BE212E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080D511C-88C7-42EB-AB34-6B58C7BE212E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971B1CCC-574D-4843-A904-8E342BE7F5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971B1CCC-574D-4843-A904-8E342BE7F5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971B1CCC-574D-4843-A904-8E342BE7F5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971B1CCC-574D-4843-A904-8E342BE7F5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1A159B0-6EB3-4742-A781-16FD39FC9C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A159B0-6EB3-4742-A781-16FD39FC9C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A159B0-6EB3-4742-A781-16FD39FC9C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A159B0-6EB3-4742-A781-16FD39FC9C97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +104,9 @@ Global
 		{5DBBADE1-F07B-41E1-A0A9-17DC25E87573} = {A2A84088-16CD-4658-8B62-AE288551F6CD}
 		{D944FA2A-9675-40A0-85AB-324342BED92B} = {A2A84088-16CD-4658-8B62-AE288551F6CD}
 		{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91} = {A2A84088-16CD-4658-8B62-AE288551F6CD}
+		{080D511C-88C7-42EB-AB34-6B58C7BE212E} = {97A6EA10-76ED-489E-9757-576DE62A42E2}
+		{971B1CCC-574D-4843-A904-8E342BE7F5E5} = {97A6EA10-76ED-489E-9757-576DE62A42E2}
+		{C1A159B0-6EB3-4742-A781-16FD39FC9C97} = {97A6EA10-76ED-489E-9757-576DE62A42E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {619AEC94-F0AE-4962-91C6-C687FB4316B1}

@@ -1,15 +1,26 @@
+using Microsoft.AspNetCore.HttpOverrides;
+using PaymentSolution.API.Filters;
+using PaymentSolution.API.MIddlewares;
+using PaymentSolution.Application.IoC;
 using PaymentSolution.GerenciaNet;
 using PaymentSolution.Infrastructure.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddPaymentSolutionInfrastructure(builder.Configuration);
+builder.Services.AddPaymentSolutionServices();
 
-builder.Services.AddControllers();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<CustomAuthorizeFilter>();
+    options.Filters.Add<HttpResponseExceptionFilter>();
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddGerenciaNet(builder.Configuration);
+builder.Services.AddGerenciaNet();
 
 var app = builder.Build();
 
@@ -21,7 +32,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
+
+app.UseMiddleware<AuthenticationMiddleware>();
 
 app.MapControllers();
 

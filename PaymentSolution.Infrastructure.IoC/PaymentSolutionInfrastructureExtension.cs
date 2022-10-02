@@ -11,7 +11,7 @@ namespace PaymentSolution.Infrastructure.IoC
         {
             services.AddDbContext<PaymentSolutionDataContext>(options => options.OnConfiguring(configuration));
             services.AddScoped(typeof(IPaymentSolutionRepository<>), typeof(PaymentSolutionRepository<>));
-
+            services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }
     }

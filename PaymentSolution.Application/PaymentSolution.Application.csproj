@@ -6,4 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentSolution.Application.Interfaces\PaymentSolution.Application.Interfaces.csproj" />
+    <ProjectReference Include="..\PaymentSolution.Domain\PaymentSolution.Domain.csproj" />
+    <ProjectReference Include="..\PaymentSolution.Infrastructure.Interfaces\PaymentSolution.Infrastructure.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.23.1" />
+  </ItemGroup>
+
 </Project>

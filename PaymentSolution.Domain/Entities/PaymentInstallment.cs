@@ -1,6 +1,6 @@
 ﻿namespace PaymentSolution.Domain.Entities
 {
-    public class PaymentInstallment
+    public class PaymentInstallment : BaseEntity
     {
         public int PaymentID { get; set; }
         public Payment Payment { get; set; }
