@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.HttpOverrides;
 using PaymentSolution.API.Filters;
 using PaymentSolution.API.MIddlewares;
 using PaymentSolution.Application.IoC;
-using PaymentSolution.GerenciaNet;
 using PaymentSolution.Infrastructure.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +9,8 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddPaymentSolutionInfrastructure(builder.Configuration);
 builder.Services.AddPaymentSolutionServices();
+
+
 
 builder.Services.AddControllersWithViews(options =>
 {
@@ -19,8 +20,6 @@ builder.Services.AddControllersWithViews(options =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-builder.Services.AddGerenciaNet();
 
 var app = builder.Build();
 

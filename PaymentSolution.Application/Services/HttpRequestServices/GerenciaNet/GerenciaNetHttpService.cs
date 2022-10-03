@@ -1,9 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using PaymentSolution.Application.Services.AuthenticationServices.GerenciaNet;
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace PaymentSolution.GerenciaNet
+namespace PaymentSolution.Application.Services.HttpRequestServices.GerenciaNet
 {
     public class GerenciaNetHttpService
     {

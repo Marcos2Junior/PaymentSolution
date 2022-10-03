@@ -7,6 +7,5 @@
         public int PaymentServiceID { get; set; }
         public PaymentService PaymentService { get; set; }
         public List<PaymentInstallment> PaymentInstallments { get; set; }
-        public DateTime DateTime { get; set; }
     }
 }

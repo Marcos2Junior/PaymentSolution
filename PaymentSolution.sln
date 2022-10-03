@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.API", "PaymentSolution.API\PaymentSolution.API.csproj", "{244C208D-F50C-4590-B8B5-99F01E278CDE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.GerenciaNet", "PaymentSolution.GerenciaNet\PaymentSolution.GerenciaNet.csproj", "{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B216ED1C-50C6-402C-BE69-02C5A5448A65}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -36,11 +34,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Infrastruct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Infrastructure.Interfaces", "PaymentSolution.Infrastructure.Interfaces\PaymentSolution.Infrastructure.Interfaces.csproj", "{F5BC81F4-8BB2-4218-AF7F-14DCAC26BE91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Application", "PaymentSolution.Application\PaymentSolution.Application.csproj", "{080D511C-88C7-42EB-AB34-6B58C7BE212E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Application", "PaymentSolution.Application\PaymentSolution.Application.csproj", "{080D511C-88C7-42EB-AB34-6B58C7BE212E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Application.Interfaces", "PaymentSolution.Application.Interfaces\PaymentSolution.Application.Interfaces.csproj", "{971B1CCC-574D-4843-A904-8E342BE7F5E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Application.Interfaces", "PaymentSolution.Application.Interfaces\PaymentSolution.Application.Interfaces.csproj", "{971B1CCC-574D-4843-A904-8E342BE7F5E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentSolution.Application.IoC", "PaymentSolution.Application.IoC\PaymentSolution.Application.IoC.csproj", "{C1A159B0-6EB3-4742-A781-16FD39FC9C97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentSolution.Application.IoC", "PaymentSolution.Application.IoC\PaymentSolution.Application.IoC.csproj", "{C1A159B0-6EB3-4742-A781-16FD39FC9C97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,10 +50,6 @@ Global
 		{244C208D-F50C-4590-B8B5-99F01E278CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{244C208D-F50C-4590-B8B5-99F01E278CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{244C208D-F50C-4590-B8B5-99F01E278CDE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A19C6D2-068F-4F86-949C-89B74FAEEFCB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{751F7E0E-66E9-44C5-B2EC-5910CB80FDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU

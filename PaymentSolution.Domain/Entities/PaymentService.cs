@@ -1,9 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using PaymentSolution.Shared.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace PaymentSolution.Domain.Entities
 {
     public class PaymentService : BaseEntity
     {
+        public int UserID { get; set; }
+        public User User { get; set; }
         public PaymentServiceType PaymentServiceType { get; set; }
         [Required, MaxLength(50)]
         public string Name { get; set; }
@@ -16,12 +19,5 @@ namespace PaymentSolution.Domain.Entities
         public string? WebHook { get; set; }
         public bool UseCertificate { get; set; }
         public string? Scope { get; set; }
-    }
-
-    public enum PaymentServiceType
-    {
-        GerenciaNet = 1,
-        BancoBrasil = 2,
-        Santander = 3
     }
 }

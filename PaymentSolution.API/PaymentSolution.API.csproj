@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PaymentSolution.Application.IoC\PaymentSolution.Application.IoC.csproj" />
-    <ProjectReference Include="..\PaymentSolution.GerenciaNet\PaymentSolution.GerenciaNet.csproj" />
     <ProjectReference Include="..\PaymentSolution.Infrastructure.IoC\PaymentSolution.Infrastructure.IoC.csproj" />
     <ProjectReference Include="..\PaymentSolution.Shared\PaymentSolution.Shared.csproj" />
   </ItemGroup>

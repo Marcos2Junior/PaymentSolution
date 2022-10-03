@@ -15,6 +15,8 @@ namespace PaymentSolution.Infrastructure.IoC
             services.AddScoped(typeof(IPaymentSolutionRepository<>), typeof(PaymentSolutionRepository<>));
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserAccessRepository, UserAccessRepository>();
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+            services.AddScoped<IPaymentServiceRepository, PaymentServiceRepository>();
             return services;
         }
 
